@@ -1,0 +1,126 @@
+.site-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 208px;
+}
+
+.site-header-top{
+    display: flex;
+    justify-content: space-between;
+    font-family: Montserrat;
+    font-weight: 400;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.city-choose-container{
+    display: inline-flex;
+    padding: 1px 0px 3.361px 3px;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 12px;
+}
+
+.city-choose-container:hover{
+    cursor: pointer;
+}
+
+.city-choosen{
+    display: flex;
+    gap: 5px;
+    color: #000;
+    font-size: 13px;
+    line-height: 14px; 
+}
+
+
+.company-address{
+    display: flex;
+    gap: 12px;
+    color: #333;
+    font-size: 13px;
+    line-height: 20px;
+}
+
+
+
+.company-address-geoposition{
+    width: 9px;
+    height: auto;
+}
+
+.social-nets-container{
+    display: flex;
+    gap: 22px;
+    align-items: center;
+}
+
+.phone-container{
+    display: inline-flex;
+    align-items: center;
+}
+
+.phone-container__icon{
+    height: 13px;
+    width: auto;
+    opacity: 0.5;
+    align-items: center;
+}
+
+.phone-container__number{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0 16px 0 0;
+    color: #333;
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.phone-container__number:hover{
+    cursor: pointer;
+}
+
+.call-request{
+    color: #3562D6;
+    font-size: 13px;
+    line-height: 19px; 
+}
+
+.call-request:hover{
+    cursor: pointer;
+}
+
+.small_arrow_down{
+    height: 4px;
+    width: 5px;
+}
+
+.small_arrow_down:hover{
+    cursor: pointer;
+}
+
+
+.site-header-menu{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-description{
+    width: 207px;
+}
+
+
+
+
+
+.navigation{
+    display: flex;
+    gap: 45px;
+}
+
