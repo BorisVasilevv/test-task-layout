@@ -11,66 +11,111 @@
 
 
 <body>
-    <div class="site-header">
+    <section class="main-container">
+        <section class="site-top-container">
+            <div class="site-header">
 
-        <div class="site-header-top">
-            
-            <div class="city-choose-container">
-                <img src="assets/icons/arrow.svg"/>
-                <div class="city-choosen">
-                    <span>Челябинск</span>
-                    <img src="assets/icons/small_arrow_down.svg"/>
+                <div class="site-header-top-container">
+                    <div class="city-choose-container">
+                        <img src="assets/icons/main_menu/arrow.svg"/>
+                        <div class="city-choosen">
+                            <span class="city-choosen-name">Челябинск</span>
+                            <img class="small_arrow_down" src="assets/icons/main_menu/small_arrow_down.svg"/>
+                        </div>
+                    </div>
+                    <div class="company-address">
+                        <img  class="company-address-geoposition" src="assets/icons/main_menu/geoposition.svg"/>
+                        <span>Челябинск, ул. Лермонтова 21, 3 этаж, офис 4</span>
+                    </div>
+                    <div class="social-nets-container">
+                        <img class="social-nets-items" src="assets/icons/main_menu/youtube.svg"/>
+                        <img class="social-nets-items" src="assets/icons/main_menu/twitter.svg"/>
+                        <img class="social-nets-items" src="assets/icons/main_menu/instagram.svg"/>
+                        <img class="social-nets-items" src="assets/icons/main_menu/vk.svg"/>
+                    </div>
+                    <div class="phone-container">
+                        <img class="phone-container__icon" src="assets/icons/main_menu/phone.svg"/>
+                        <div class="phone-container__number">
+                            <span>+7 902 345-67-89</span>
+                            <img class="small_arrow_down" src="assets/icons/main_menu/small_arrow_down.svg"/>                    
+                        </div>
+                        <span class="call-request">Заказать звонок</span>
+                        
+                    </div>
+                    <div class="header-help-menu">
+                        <div class="header-help-menu-language">
+                            <img src="assets/icons/main_menu/language.svg"/>
+                            <div class="header-help-menu-language__icon">
+                                <span>RU</span>
+                                <img class="small_arrow_down" src="assets/icons/main_menu/small_arrow_down.svg"/>
+                            </div>
+                        </div>
+                        <img src="assets/icons/main_menu/profile.svg"/>
+                        <div>
+                            <img class="basket__icon" src="assets/icons/main_menu/basket.svg"/>
+                            <div class="basket__counter">
+                                <span class="basket__counter-text">2</span>
+                            </div>
+                            
+                        </div>
+                        
+                    </div>
                 </div>
-                
-            </div>
-            <div class="company-address">
-                <img  class="company-address-geoposition" src="assets/icons/geoposition.svg"/>
-                <span>Челябинск, ул. Лермонтова 21, 3 этаж, офис 4</span>
-            </div>
-            <div class="social-nets-container">
-                <img src="assets/icons/youtube.svg"/>
-                <img src="assets/icons/twitter.svg"/>
-                <img src="assets/icons/instagram.svg"/>
-                <img src="assets/icons/vk.svg"/>
-            </div>
-            <div class="phone-container">
-                <img class="phone-container__icon" src="assets/icons/phone.svg"/>
-                <div class="phone-container__number">
-                    <span>+7 902 345-67-89</span>
-                    <img class="small_arrow_down" src="assets/icons/small_arrow_down.svg"/>                    
-                </div>
-                <span class="call-request">Заказать звонок</span>
-                
-            </div>
-            <div>
-                <img src="assets/icons/language.svg"/>
-                <span>RU</span>
-                <img src="assets/icons/small_arrow_down.svg"/>
-                <img src="assets/icons/profile.svg"/>
-                <img src="assets/icons/basket.svg"/>
-                <span>2</span>
-            </div>
-        </div>
 
-        <div class="site-header-menu">
-            <img src="assets/icons/showmenu.svg"/>
-            <img src="assets/icons/cicrle-logo.svg"/>
-            <span>allcorp</span>
-            <span class="header-description">Готовое решение для создания корпоративного сайта</span>
-            <div class="navigation">
-                <span>Услуги</span>
-                <span>Каталог</span>
-                <span>Проекты</span>
-                <span>Компания</span>
-                <span>Курсы</span>
-                <span>Цены</span>
-                <span>Информация</span>
+                <div class="site-header-menu">
+                    <div class="site-header-menu-rigth">
+                        <img src="assets/icons/main_menu/showmenu.svg"/>
+                    </div>
+                    <div class="site-header-menu-logo">
+                        <img height="29px" width="29px" src="assets/icons/main_menu/cicrle-logo.svg"/>
+                        <span class="site-header-menu-logo-text">allcorp</span>
+                    </div>
+                    <span class="header-description">Готовое решение для создания корпоративного сайта</span>
+                    <div class="navigation">
+                        <span class="navigation-elem">Услуги</span>
+                        <span class="navigation-elem">Каталог</span>
+                        <span class="navigation-elem">Проекты</span>
+                        <span class="navigation-elem">Компания</span>
+                        <span class="navigation-elem">Курсы</span>
+                        <span class="navigation-elem">Цены</span>
+                        <span class="navigation-elem">Информация</span>
+                    </div>
+                    <button class="header__sumbit-button">Подать заявку</button>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="section-info">
+        <div class="section-info-data">
+            <div class="info-data__container">
+                <span class="info-data__header">Быстро запускается</span>
+                <span class="info-data__text">3-5 дней - это на порядок быстрее по сравнению с запуском аналогичного функционала с нуля. Окупаемость - один месяц!</span>
+            </div>
+            <div class="cart-info-container">
+                <div class="cart-info">
+                    <img class="cart-info__image" src="assets/icons/info_page/info_icon1.svg"/>
+                    <span class="cart-info__header">Дизайн</span>
+                    <span class="cart-info__text">Подберите подходящую цветовую гамму, замените логотип</span>
+                </div>
+                <div class="cart-info">
+                    <img class="cart-info__image" src="assets/icons/info_page/info_icon2.svg"/>
+                    <span class="cart-info__header">Информация</span>
+                    <span class="cart-info__text">Заполните информацию о компании и расскажите про свои преимущества</span>
+                </div>
+                <div class="cart-info">
+                    <img class="cart-info__image" src="assets/icons/info_page/info_icon3.svg"/>
+                    <span class="cart-info__header">Контент</span>
+                    <span class="cart-info__text">Загрузите каталог товаров или список услуг и сайт готов</span>
+                </div>
             </div>
             
-            <button>Подать заявку</button>
         </div>
-        
-    </div>
+        <div class="section-info__button">
+            <button class="start_plan__button">Пошаговый план запуска</button>
+        </div>
+    </section>
+
 </body>
 
 
