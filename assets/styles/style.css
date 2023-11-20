@@ -92,9 +92,10 @@ section{
 }
 
 .phone-container__icon{
+    display: flex;
     height: 13px;
     width: auto;
-    opacity: 0.5;
+    opacity: 0.8;
     align-items: center;
     
 }
@@ -731,3 +732,360 @@ section{
 }
 
 /*----*/
+
+
+/* sixth page (progucts)*/
+.section-products{
+    padding: 151px 0 338px;
+    justify-content: center;
+    font-family: Montserrat;
+}
+
+.products-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.product-item{
+    display: flex;
+    flex-direction: column;
+    height: 504px;
+    width: 361px;
+    border: 1px solid #E5E5E5;
+    align-items: center;
+    position: relative;
+}
+
+.product-item-img-container{
+    margin-bottom: 20px;
+}
+
+.product-item-image{
+    width: 296px;
+    height: 298.368px;
+
+}
+
+.product-item-img-container-header{
+    color: #FFF;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 13px;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    padding: 5px 8px;
+    gap: 10px;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.10);
+   
+    position: absolute;
+    top: 28px;
+    left: 28px;
+}
+
+.hit-product{
+    background: #ED673C;
+}
+
+.advice-product{
+    background: #925AEC;;
+}
+
+.new-product{
+    background: #31B82F;
+}
+
+.product-item__action-1{
+    position: absolute;
+    top: 28px;
+    right: 28px;
+}
+
+.product-item__action-2{
+    position: absolute;
+    top: 66px;
+    right: 28px;
+}
+
+
+.product-item-describtion{
+    width: 305px;
+}
+
+.product-item-describtion__text{
+    
+    color: #333;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 22px; 
+}
+
+.product-item-data{
+    display: flex;
+    flex-direction: row;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px; 
+    justify-content: flex-start;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+.product-item-availability-circle{
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #69BE15;
+    border: 1px solid #5DA911;
+    margin-right: 6px;
+}
+
+.product-item-availability-text{
+    color: #69BE15;
+    margin-right: 18px;
+}
+
+.product-item-data-code{
+    color: #999;
+}
+
+.product-item-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.cost-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.product-item-cost{
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    color:#333;
+}
+
+.product-item-previous-cost{
+    color: #999;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 30px; 
+    text-decoration: line-through;
+}
+
+.product-item-discount{
+    border-radius: 3px;
+    border: 1px solid #F2CB00;
+    background: #FFD600;
+    color: #333;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 10px; /* 90.909% */
+}
+
+.product-item-buy__button{
+    border-radius: 4px;
+    border: 1px solid rgba(55, 97, 233, 0.35);
+    display: inline-flex;
+    padding: 8px 20px;
+    background-color: #FFF;
+    color: #3761E9;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+.product-item-buy__button:hover{
+    background-color: #3761E9 ;
+    color: #FFF;
+    cursor: pointer;
+}
+
+/*-------------*/
+
+/* footer*/
+.section-footer{
+    padding: 50px 0 62px;
+    height: 652px;
+    align-items: flex-start;
+    font-family: Montserrat;
+    background-color: #333;
+}
+
+.footer-container{
+    width: 1502px;
+}
+
+.footer-container__header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 54px;
+}
+
+.footer-container__header-info{
+    display: flex;
+    flex-direction: row;
+    gap:54px;
+    align-items: center;
+}
+
+.footer-phone-info-container{
+    display: flex;
+    flex-direction: row;
+    gap: 21px;
+}
+
+.footer-phone-info__icon{
+    height: 14px;
+    width: 8px;
+}
+
+.footer-phone-info__number{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    color: #FFF;
+    font-size: 15px;
+    align-items: center;
+    font-weight: 700;
+    line-height: 16px; 
+}
+
+.footer-phone-info__number:hover{
+    cursor: pointer;
+}
+
+.footer-small-arrow{
+    height: 3px;
+    width: 5px;
+}
+
+.footer-email-info-container{
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+}
+
+.footer-email-info__email{
+    color: #999;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px; 
+}
+
+.footer-addres{
+    color: #FFF;
+    margin: 0;
+}
+
+/* .footer-container__header-social-network-container{
+    display: flex;
+    flex-direction: row;
+    gap: 7px;
+}
+
+.footer-container__header-social-network-item{
+
+} */
+
+
+
+/* footer main*/
+.footer-content{
+    position: relative;
+}
+
+.footer-container-main{
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    gap: 84px;
+    background-color: #333;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    padding: 60px 70px 69px 64px;
+}
+
+.footer-container-column{
+    display: flex;
+    flex-direction: column;
+    gap:21px;
+    width: 206px;
+}
+
+.footer-container-column__header{
+    color: #FFF;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+.footer-container-column__header:hover{
+    color: #999;
+    cursor: pointer;
+}
+
+.footer-container-column__content{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer-container-column__item{
+    color: #999;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px; 
+    text-decoration: none;
+}
+
+.footer-container-column__item:hover{
+    color: #FFF;
+    cursor: pointer;
+}
+
+
+.pay-container{
+    display: flex;
+    justify-content: center;
+    background-color: #333;
+    position: absolute;
+    z-index: 2;
+    top: 376px;
+    left: 629px;
+    margin-bottom: 50px;
+}
+
+.footer-container-bottom{
+    position: absolute;
+    top: 426px;
+    display: flex;
+    flex-direction: row;
+    gap: 164px;
+    color: #999;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 22px; 
+    align-items: center;
+}
+
+.footer-bottom-subscribe{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-build-in-info{
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
