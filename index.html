@@ -6,22 +6,23 @@
     <link type="text/css" rel="stylesheet" href="assets/styles/reset.css">
     <link type="text/css" rel="stylesheet" href="assets/styles/font.css">
     <link type="text/css" rel="stylesheet" href="assets/styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="assets/scripts/scripts.js"></script>
     <title>Title</title>
 </head>
 
 
 <body>
-    <div class="main-container">
-        <section class="site-top-container">
+    <div  class="main-container">
+        <section  class="site-top-container">
             <div class="site-header">
-
                 <div class="site-header-top-container">
                     <div class="city-choose-container">
                         <img src="assets/icons/main_menu/arrow.svg"/>
-                        <div class="city-choosen">
-                            <span class="city-choosen-name">Челябинск</span>
-                            <img class="small_arrow_down" src="assets/icons/main_menu/small_arrow_down.svg"/>
-                        </div>
+                        <select class="select-header-menu city-select">
+                            <option value="chel" selected>Челябинск</option>
+                            <option value="moscow">Москва</option>
+                        </select>
                     </div>
                     <div class="company-address">
                         <img  class="company-address-geoposition" src="assets/icons/main_menu/geoposition.svg"/>
@@ -34,21 +35,23 @@
                         <img class="social-nets-items" src="assets/icons/main_menu/vk.svg"/>
                     </div>
                     <div class="phone-container">
-                        <img class="phone-container__icon" src="assets/icons/main_menu/phone.svg"/>
-                        <div class="phone-container__number">
-                            <span>+7 902 345-67-89</span>
-                            <img class="small_arrow_down" src="assets/icons/main_menu/small_arrow_down.svg"/>                    
+                        <div class="phone-container__main">
+                            <img class="phone-container__icon" src="assets/icons/main_menu/phone.svg"/>
+                            <select class="select-header-menu">
+                                <option selected>+7 902 345-67-89</option>
+                                <option value="second_phone">+7 000 000-00-10</option>
+                            </select>
                         </div>
                         <span class="call-request">Заказать звонок</span>
-                        
                     </div>
                     <div class="header-help-menu">
                         <div class="header-help-menu-language">
                             <img src="assets/icons/main_menu/language.svg"/>
-                            <div class="header-help-menu-language__icon">
-                                <span>RU</span>
-                                <img class="small_arrow_down" src="assets/icons/main_menu/small_arrow_down.svg"/>
-                            </div>
+                            <select class="select-header-menu">
+                                <option value="ru" selected>RU</option>
+                                <option value="en">EN</option>
+                                <option value="fr">FR</option>
+                            </select>
                         </div>
                         <img src="assets/icons/main_menu/profile.svg"/>
                         <div>
@@ -56,9 +59,7 @@
                             <div class="basket__counter">
                                 <span class="basket__counter-text">2</span>
                             </div>
-                            
                         </div>
-                        
                     </div>
                 </div>
 
@@ -71,19 +72,52 @@
                         <span class="site-header-menu-logo-text">allcorp</span>
                     </div>
                     <span class="header-description">Готовое решение для создания корпоративного сайта</span>
-                    <div class="navigation">
+                    <nav class="navigation">
                         <span class="navigation-elem">Услуги</span>
                         <span class="navigation-elem">Каталог</span>
                         <span class="navigation-elem">Проекты</span>
-                        <span class="navigation-elem">Компания</span>
+                        <span class="navigation-elem" id="company-elem-site-header">Компания</span>
                         <span class="navigation-elem">Курсы</span>
                         <span class="navigation-elem">Цены</span>
                         <span class="navigation-elem">Информация</span>
-                    </div>
+                    </nav>
                     <button class="header__sumbit-button">Подать заявку</button>
                 </div>
             </div>
         </section>
+        <div class="drop-down-menu">
+            <div id="first-drop-menu" class="drop-menu first-drop-menu"> 
+                <div class="menu-elem hard-menu-elem">
+                    <p>О компании</p>
+                    <img src="assets/icons/main_menu/small_arrow_rigth.svg">
+                </div>
+                <div class="menu-elem simple-menu-elem">Команда</div>
+                <div id="hard-menu-elem-2" class="menu-elem hard-menu-elem">
+                    <p>Партнеры</p>
+                    <img src="assets/icons/main_menu/small_arrow_rigth.svg">
+                </div>
+                <div class="menu-elem simple-menu-elem">Производители</div>
+                <div class="menu-elem simple-menu-elem">Отзывы</div>
+                <div class="menu-elem simple-menu-elem">Карьера</div>
+                <div class="menu-elem simple-menu-elem">Лицензии</div>
+                <div class="menu-elem simple-menu-elem">Документы</div>
+                <div class="menu-elem hard-menu-elem">
+                    <p>Реквизиты</p>
+                    <img src="assets/icons/main_menu/small_arrow_rigth.svg">
+                </div>
+                <div class="menu-elem simple-menu-elem">Вопрос ответ</div>
+                <div class="menu-elem simple-menu-elem">Обзоры</div>
+            </div>
+
+            <div id="second-drop-menu" class="drop-menu second-drop-menu">
+                <div class="menu-elem simple-menu-elem">О компании</div>
+                <div class="menu-elem simple-menu-elem">Команда</div>
+                <div class="menu-elem simple-menu-elem">Партнёры</div>
+                <div class="menu-elem simple-menu-elem">Производители</div>
+                <div class="menu-elem simple-menu-elem">Отзывы</div>
+
+            </div>
+        </div>
     </div>
 
     <section class="section-pluses">
@@ -109,12 +143,10 @@
                     <span class="cart-info__text">Загрузите каталог товаров или список услуг и сайт готов</span>
                 </div>
             </div>
-            
         </div>
-
-            <button class="section-pluses__button">Пошаговый план запуска</button>
-
+        <button class="section-pluses__button">Пошаговый план запуска</button>
     </section>
+
     <section class="news-section">
         <div class="news-section-content">
             <span class="news-section-year-info">9 лет на рынке </span>
@@ -199,7 +231,6 @@
 
     <section class="section-contact-form">
         <div class="contact-form-content">
-
             <span class="contact-form__header">Контакты</span>
             <span class="contact-form__main-header">Свяжитесь с нами</span>
             <span class="contact-form__text">ООО "Компания" — учрежденное одним или несколькими юридическими или физическими лицами хозяйственное общество. Участники общества не отвечают по его обязательствам </span>
@@ -219,7 +250,6 @@
                     <input class="big-input-form-field" name="question" id="question"/>
                 </div>
                 <div class="checkbox-personal-data">
-                    
                     <input class="checkbox-form" type="checkbox" name="checkbox" id="checkbox"  />
                     <label class="checkbox-label" for="checkbox"> 
                             Я согласен на обработку
@@ -252,7 +282,6 @@
                         <div class="cost-container">
                             <span class="product-item-cost">37 000 ₽</span>
                         </div>
-                        
                         <button class="product-item-buy__button">В корзину</button>
                     </div>
                 </div>
@@ -334,8 +363,7 @@
         </div>
     </section>
 
-
-    <section class="section-footer">
+    <footer class="footer">
         <div class="footer-container">
             <div class="footer-container__header">
                 <div class="footer-container__header-info">
@@ -361,7 +389,6 @@
                     </div>
                 </div>
             </div>
-
 
             <div class="footer-content">
                 <div class="footer-container-main">
@@ -461,8 +488,6 @@
                         <a class="footer-container-column__header">Цены</a>
                         <a class="footer-container-column__header">Контакты</a>
                     </div>
-
-                    
                 </div>
 
                 <div class="pay-container">
@@ -480,21 +505,19 @@
                     </a>
                     <div class="header-help-menu-language">
                         <img src="assets/icons/footer/language.svg"/>
-                        <div class="header-help-menu-language__icon">
-                            <span>RU</span>
-                            <img class="footer-small-arrow" src="assets/icons/footer/small_arrow.svg"/>
-                        </div>
+                        <select class="select-header-menu bottom-select">
+                            <option value="ru" selected>RU</option>
+                            <option value="en">EN</option>
+                            <option value="fr">FR</option>
+                        </select>
                     </div>
                     <div class="footer-build-in-info">
                         <span>Сделано в</span>
                         <img src="assets/icons/footer/aspro.svg"/>
                     </div>
                 </div>
-
             </div>
-
-            
         </div>
-    </section>
+    </footer>
 </body>
 </html>
